@@ -1,4 +1,4 @@
-// StatusLegend.jsx
+// TableStatus.jsx
 // แสดง legend สีสถานะโต๊ะ
 
 const LEGEND_ITEMS = [
@@ -7,7 +7,7 @@ const LEGEND_ITEMS = [
   { color: "#f87171", label: "มีลูกค้าใช้งาน" },
 ];
 
-export function StatusLegend() {
+export function TableStatus() {
   return (
     <div
       style={{

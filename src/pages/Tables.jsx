@@ -1,5 +1,5 @@
-// TableSelection.jsx
-// หน้าหลักเลือกโต๊ะ — รวม TableGrid, StatusLegend, TakeAwayButton
+// Tables.jsx
+// หน้าหลักเลือกโต๊ะ — รวม TableGrid, TableStatus, TakeAwayButton
 
 import { useState } from "react";
 import { TableGrid } from "../components/tables/TableGrid";
@@ -20,7 +20,7 @@ const INITIAL_TABLES = [
   { id: 10, number: 10, status: "occupied" },
 ];
 
-export default function TableSelection() {
+export default function Tables() {
   const [tables] = useState(INITIAL_TABLES);
   const [selected, setSelected] = useState(null);
 
@@ -103,7 +103,7 @@ export default function TableSelection() {
               paddingTop: "8px",
             }}
           >
-            <StatusLegend />
+            <TableStatus />
             <TakeAwayButton onClick={handleTakeAway} />
           </div>
         </div>
