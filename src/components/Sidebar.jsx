@@ -2,7 +2,7 @@ import logo from "../assets/logo.png";
 import {
   IconDashboard, IconMenu, IconOrders,
   IconTable, IconSettings, IconLogout, IconChevronLeft,
-} from "../icons/Icons";
+} from "./icons/Icons";
 
 const NAV_ITEMS = [
   { key: "dashboard", label: "Dashboard", icon: <IconDashboard /> },
@@ -22,7 +22,7 @@ export default function Sidebar({ open, onToggle, activeNav, onNavChange }) {
           {open && (
             <div style={s.logoText}>
               <span style={s.logoTitle}>PORSOR3</span>
-              <span style={s.logoSub}>เส้นแม่น พอง.คอ ๓</span>
+              <span style={s.logoSub}>เล้งแซ่บ</span>
             </div>
           )}
         </div>
