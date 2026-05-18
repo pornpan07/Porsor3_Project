@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Tables from './pages/Tables'; //เลือกโต๊ะ
+import LoginPage from './pages/LoginPage'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <LoginScreen />
+    <LoginPage />
   </React.StrictMode>
 );
 
